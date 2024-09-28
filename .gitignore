@@ -1,0 +1,34 @@
+# Ignore Python cache files
+__pycache__/
+*.py[cod]
+
+# Ignore virtual environments
+venv/
+env/
+
+# Ignore system-specific files
+.DS_Store
+*.log
+
+# Ignore node_modules (if using Node.js for frontend)
+node_modules/
+
+# Ignore any IDE-specific directories (for example, VSCode or JetBrains)
+.vscode/
+.idea/
+
+# Ignore static files that should not be versioned
+static/
+
+# Ignore Flask config (if any sensitive information is included)
+config.py
+
+# Ignore local settings or environment files
+.env
+*.env
+
+# Ignore large data files if any
+data/
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/

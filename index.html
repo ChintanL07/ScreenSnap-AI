@@ -1,0 +1,35 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testing Instructions Generator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>ScreenSnap AI</h1>
+
+    <!-- Text Box for Optional Context -->
+    <label for="context">Optional Context</label>
+    <textarea id="context" placeholder="Enter any additional context here..."></textarea>
+
+    <!-- Multi-Image Uploader -->
+    <label for="screenshots" class="custom-file-upload">
+      <i class="fas fa-cloud-upload-alt"></i> Upload Screenshots
+    </label>
+    <input type="file" id="screenshots" multiple accept="image/*">
+    <div id="file-names"></div>
+
+
+    <!-- Button to Trigger LLM Processing -->
+    <button id="generate">Describe Image</button>
+
+    <!-- Section to Display Generated Output -->
+    <div id="output"></div>
+  </div>
+
+  <!-- Script for Handling Interactions -->
+  <script src="script.js"></script>
+</body>
+</html>

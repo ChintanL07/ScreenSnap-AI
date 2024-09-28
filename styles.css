@@ -1,0 +1,157 @@
+/* styles.css */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #e0eafc, #cfdef3); /* Soft blue gradient */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+.container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 420px;
+  animation: fadeIn 1s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+  position: relative;
+  animation: slideIn 1s ease-in-out;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  color: #555;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+textarea {
+  width: 100%;
+  height: 90px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  resize: none;
+  transition: border-color 0.3s ease;
+}
+
+textarea:focus {
+  border-color: #607d8b; /* Cool gray focus */
+  outline: none;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+/* Custom File Upload Style */
+.custom-file-upload {
+  background-color: #ffffff;
+  color: #607d8b;
+  padding: 30px;
+  border: 2px dashed #607d8b; /* Dashed border like a drop zone */
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  text-align: center;
+  display: block;
+  margin: 20px 0;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  position: relative;
+  box-shadow: 0 5px 15px rgba(96, 125, 139, 0.1);
+}
+
+.custom-file-upload:hover {
+  background-color: #f2f4f7; /* Light hover background */
+  border-color: #455a64; /* Darker border on hover */
+}
+
+.custom-file-upload i {
+  font-size: 36px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+#screenshots {
+  display: none; /* Keep file input hidden */
+}
+
+#file-names {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+  max-height: 100px;
+  overflow-y: auto;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+
+button {
+  background-color: #607d8b; /* Cool gray */
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin: 20px auto 0;
+  box-shadow: 0 5px 15px rgba(96, 125, 139, 0.4);
+}
+
+button:hover {
+  background-color: #455a64; /* Darker gray on hover */
+}
+
+#output {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  min-height: 60px;
+  font-size: 15px;
+  color: #333;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: scale(0.9);
+  }
+  to {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+
+@keyframes slideIn {
+  from {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
