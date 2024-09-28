@@ -104,7 +104,7 @@ This project is licensed under the MIT License. Feel free to modify and distribu
 
 ## Contact
 
-If you have any questions or feedback, please reach out to me at YOUR_EMAIL@example.com.
+If you have any questions or feedback, please reach out to me at b22me036@iitj.ac.in.
 ```
 
 ### Key Additions:
